@@ -17,7 +17,7 @@ class ImageCarousel extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             image: DecorationImage(
               image: NetworkImage(images[index]),
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
           ),
         ),
