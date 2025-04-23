@@ -32,7 +32,10 @@ class ProductListScreen extends StatelessWidget {
                     selected: controller.selectedCategory,
                     onSelected: controller.filterByCategory,
                   ),
-               controller.isLoading ? Center(child: CircularProgressIndicator()) :   Expanded(
+               controller.isLoading ? SizedBox(
+                   width: double.infinity,
+                   height: 500,
+                   child: Center(child: CircularProgressIndicator())) :   Expanded(
                     child: GridView.builder(
                       padding: const EdgeInsets.all(10),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
